@@ -1,0 +1,172 @@
+[ 2016-08-20T22:56:43+08:00 ] 60.220.122.76 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005712s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /alidata/www/dayang/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+
+[ 2016-08-20T22:56:46+08:00 ] 60.220.122.76 /?code=021ZsKu70hzv7u1XY4s70a3Ku70ZsKuq&state=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /alidata/www/dayang/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [8] Undefined index: errcode /alidata/www/dayang/Application/Common/Common/function.php 第 86 行.
+SQL: SHOW COLUMNS FROM `pg_wx_user` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `pg_wx_user` WHERE ( openid='omLyIv5fvTPYuGYEGyChtW0OiZGo' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `pg_wx_user` (`openid`,`nickname`,`headimgurl`,`sex`,`city`,`province`,`country`,`c_time`) VALUES ('omLyIv5fvTPYuGYEGyChtW0OiZGo','阿童木🎀','http://wx.qlogo.cn/mmopen/ajNVdqHZLLAEcy9qmWOEroibS0fUyfOLYicD5mcJ7wuo0pdh3mIEtpeqjweYxPPW8EXm9mB3Jc24nCrBIicTfFyww/0','2','太原','山西','中国','1471705006') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pg_user` [ RunTime:0.0305s ]
+SQL: INSERT INTO `pg_user` (`uid`,`nickname`,`headimgurl`) VALUES ('13949','阿童木🎀','http://wx.qlogo.cn/mmopen/ajNVdqHZLLAEcy9qmWOEroibS0fUyfOLYicD5mcJ7wuo0pdh3mIEtpeqjweYxPPW8EXm9mB3Jc24nCrBIicTfFyww/0') [ RunTime:0.0004s ]
+NOTIC: [2] file_get_contents(/alidata/www/dayang/ThinkPHP/Weixin/js_ticket.json): failed to open stream: No such file or directory /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 179 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 180 行.
+NOTIC: [2] file_get_contents(/alidata/www/dayang/ThinkPHP/Weixin/access_token.json): failed to open stream: No such file or directory /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 111 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 112 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 119 行.
+NOTIC: [2] fopen(/alidata/www/dayang/ThinkPHP/Weixin/access_token.json): failed to open stream: Permission denied /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 121 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 122 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 123 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 183 行.
+NOTIC: [2] fopen(/alidata/www/dayang/ThinkPHP/Weixin/js_ticket.json): failed to open stream: Permission denied /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 186 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 187 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 188 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001496s ]
+
+[ 2016-08-20T22:56:52+08:00 ] 60.220.122.76 /index.php/Home/Index/hdlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /alidata/www/dayang/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [2] file_get_contents(/alidata/www/dayang/ThinkPHP/Weixin/js_ticket.json): failed to open stream: No such file or directory /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 179 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 180 行.
+NOTIC: [2] file_get_contents(/alidata/www/dayang/ThinkPHP/Weixin/access_token.json): failed to open stream: No such file or directory /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 111 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 112 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 119 行.
+NOTIC: [2] fopen(/alidata/www/dayang/ThinkPHP/Weixin/access_token.json): failed to open stream: Permission denied /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 121 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 122 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 123 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 183 行.
+NOTIC: [2] fopen(/alidata/www/dayang/ThinkPHP/Weixin/js_ticket.json): failed to open stream: Permission denied /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 186 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 187 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 188 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2016-08-20T22:57:02+08:00 ] 60.220.122.76 /index.php/Home/Index/detail.html?rule=1&type=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /alidata/www/dayang/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [2] file_get_contents(/alidata/www/dayang/ThinkPHP/Weixin/js_ticket.json): failed to open stream: No such file or directory /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 179 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 180 行.
+NOTIC: [2] file_get_contents(/alidata/www/dayang/ThinkPHP/Weixin/access_token.json): failed to open stream: No such file or directory /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 111 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 112 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 119 行.
+NOTIC: [2] fopen(/alidata/www/dayang/ThinkPHP/Weixin/access_token.json): failed to open stream: Permission denied /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 121 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 122 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 123 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 183 行.
+NOTIC: [2] fopen(/alidata/www/dayang/ThinkPHP/Weixin/js_ticket.json): failed to open stream: Permission denied /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 186 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 187 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 188 行.
+SQL: SHOW COLUMNS FROM `pg_lrecord` [ RunTime:0.0205s ]
+SQL: SHOW COLUMNS FROM `pg_list` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `pg_list` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pg_lrecord` WHERE ( lid=7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT MAX(z) AS tp_max FROM `pg_lrecord` WHERE ( lid=7 ) LIMIT 1   [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pg_lrecord` WHERE ( lid=7 and lstatus<3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pg_lrecord` WHERE ( lid=7 and lstatus<3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-08-20T22:57:13+08:00 ] 60.220.122.76 /index.php/Home/Index/hdlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /alidata/www/dayang/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [2] file_get_contents(/alidata/www/dayang/ThinkPHP/Weixin/js_ticket.json): failed to open stream: No such file or directory /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 179 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 180 行.
+NOTIC: [2] file_get_contents(/alidata/www/dayang/ThinkPHP/Weixin/access_token.json): failed to open stream: No such file or directory /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 111 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 112 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 119 行.
+NOTIC: [2] fopen(/alidata/www/dayang/ThinkPHP/Weixin/access_token.json): failed to open stream: Permission denied /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 121 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 122 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 123 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 183 行.
+NOTIC: [2] fopen(/alidata/www/dayang/ThinkPHP/Weixin/js_ticket.json): failed to open stream: Permission denied /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 186 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 187 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/dayang/ThinkPHP/Weixin/WxApi.class.php 第 188 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-08-20T22:59:48+08:00 ] 180.163.2.118 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /alidata/www/dayang/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+
+[ 2016-08-20T23:00:06+08:00 ] 101.226.125.104 /index.php/Home/Index/detail.html?rule=1&type=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /alidata/www/dayang/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+

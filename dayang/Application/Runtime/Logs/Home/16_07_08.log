@@ -1,0 +1,73 @@
+[ 2016-07-08T23:46:42+08:00 ] 1.30.172.196 /index.php/Home/Index/hdtuan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /alidata/www/boxi/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [2] file_get_contents(/alidata/www/boxi/ThinkPHP/Weixin/js_ticket.json): failed to open stream: No such file or directory /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 179 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 180 行.
+NOTIC: [2] file_get_contents(/alidata/www/boxi/ThinkPHP/Weixin/access_token.json): failed to open stream: No such file or directory /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 111 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 112 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 119 行.
+NOTIC: [2] fopen(/alidata/www/boxi/ThinkPHP/Weixin/access_token.json): failed to open stream: Permission denied /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 121 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 122 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 123 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 183 行.
+NOTIC: [2] fopen(/alidata/www/boxi/ThinkPHP/Weixin/js_ticket.json): failed to open stream: Permission denied /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 186 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 187 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 188 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-07-08T23:46:56+08:00 ] 1.30.172.196 /index.php/Home/Index/tuandetail.html?type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /alidata/www/boxi/ThinkPHP/Library/Think/Session/Driver/Db.class.php 第 95 行.
+NOTIC: [2] file_get_contents(/alidata/www/boxi/ThinkPHP/Weixin/js_ticket.json): failed to open stream: No such file or directory /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 179 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 180 行.
+NOTIC: [2] file_get_contents(/alidata/www/boxi/ThinkPHP/Weixin/access_token.json): failed to open stream: No such file or directory /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 111 行.
+NOTIC: [8] Trying to get property of non-object /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 112 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 119 行.
+NOTIC: [2] fopen(/alidata/www/boxi/ThinkPHP/Weixin/access_token.json): failed to open stream: Permission denied /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 121 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 122 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 123 行.
+NOTIC: [2] Creating default object from empty value /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 183 行.
+NOTIC: [2] fopen(/alidata/www/boxi/ThinkPHP/Weixin/js_ticket.json): failed to open stream: Permission denied /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 186 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 187 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /alidata/www/boxi/ThinkPHP/Weixin/WxApi.class.php 第 188 行.
+SQL: SHOW COLUMNS FROM `pg_user` [ RunTime:0.0009s ]
+SQL: SELECT `tz` FROM `pg_user` WHERE ( id=57 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pg_tuan` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pg_tuan` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pg_user` WHERE ( tid=3 and tstatus=0 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: p2 /alidata/www/boxi/Application/Runtime/Cache/Home/56e58ec9fc3b95b66e1a337359b9de6b.php 第 178 行.
+NOTIC: [8] Undefined index: p3 /alidata/www/boxi/Application/Runtime/Cache/Home/56e58ec9fc3b95b66e1a337359b9de6b.php 第 179 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+

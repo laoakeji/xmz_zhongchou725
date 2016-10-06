@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta charset="UTF-8">
+<title>优惠券</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1，user-scalable=0;">
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/css/style.css"/>
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/Home/css/animate.css" />
+<script src="__PUBLIC__/Home/js/jquery.min.js"></script>
+<script src="__PUBLIC__/Home/js/public.js"></script>
+<script src="__PUBLIC__/Home/js/wow.min.js"></script>
+<script  src="__PUBLIC__/Home/layer/layer.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".sure_btn").click(function(){
+			var tag = $(this);
+			var ids = tag.attr("ids");
+			var img = tag.children("img").attr("ids");
+			if(img==0){
+				layer.confirm('你确定要使用优惠券吗', {
+				   btn: ['确定','取消'] //按钮
+				}, function(){
+					$.post("{:U('Home/Index/getprize')}",{type:ids,lt:1},function(result){ 
+						if(result.code>0){
+							layer.msg('使用成功',{
+								icon: 1,
+								time: 1000 //2秒关闭（如果不配置，默认昿秒）
+							});
+							tag.children("img").attr("src","__PUBLIC__/Home/images/youhuijuan1-1.png");
+							tag.children("img").attr("ids","1");
+							tag.find("span.dj").text("已使用");
+						}else{
+							layer.msg(result.msg,{
+								icon: 1,
+								time: 1000 //2秒关闭（如果不配置，默认昿秒）
+							});
+						}
+					})
+				},function(){
+					//取消
+				})
+			}else{
+				return;
+			}
+		});
+
+		$(".sure_4_btn").click(function(){
+				var tag = $(this);
+				var ids = tag.attr("ids");
+				var img = tag.children("img").attr("ids");
+				if(img==0){
+					layer.confirm('你确定要使用优惠券吗', {
+				   	btn: ['确定','取消'] //按钮
+					}, function(){
+						$.post("{:U('Home/Index/getprize')}",{type:ids,lt:2},function(result){
+	  						if(result.code>0){
+								layer.msg('使用成功',{
+									icon: 1,
+									time: 1000 //2秒关闭（如果不配置，默认昿秒）
+								});
+
+								if(ids==1){
+									tag.children("img").attr("src","__PUBLIC__/Home/images/4s.png");
+								}else{
+									tag.children("img").attr("src","__PUBLIC__/Home/images/5s.png");
+								}
+								tag.children("img").attr("ids","1");
+								tag.find("span.dj").text("已使用");
+							}else{
+								layer.msg(result.msg,{
+									icon: 1,
+									time: 1000 //2秒关闭（如果不配置，默认昿秒）
+								});
+							}
+	  					})
+					},function(){
+					//取消
+					})
+				}else{
+					return;
+				}
+			})
+	});
+</script>
+
+<include file="common_head" />
+</head>
+  <style>
+		html,body{height: 100%;}
+  </style>
+<body>
+  <div class="index youhuijuan" style="min-height:100%;">
+    <div class="youhuijuan-main1">
+       <a><img src="__PUBLIC__/Home/icon/yhu-tit.png"  class="wow bounceInLeft animated"></a>
+    </div>
+    <div class="youhuijuan-main2">
+    <ul>
+    
+	<volist name="ldata" id="vo">
+		<li class="wow bounceInLeft animated">
+	        <a class="sure_btn" ids="{$vo.lid}">
+				<eq name="vo.pid" value="0">
+		            <img ids ="0" src="__PUBLIC__/Home/images/youhuijuan1.png">
+		        </eq>
+		        <eq name="vo.pid" value="1">
+		            <img ids ="1" src="__PUBLIC__/Home/images/youhuijuan1-1.png">
+		        </eq>
+		            
+		        <div class="yh">
+		            <div class="yh-l">
+		                <p><span>型号：</span>{$llist[$vo['lid']-1].type}</p>
+		                <p><span>名称：</span>{$llist[$vo['lid']-1].name}</p>
+		                <p><span>原价：</span><em>{$llist[$vo['lid']-1].m}</em></p>
+		            </div>
+		            <div class="yh-r">
+		                <div class="yh-r-main">
+		                    <span class="gm">当前购买价</span>
+		                    <span class="dq">
+								<switch name="vo.lstatus">
+									<case value="0">{$llist[$vo['lid']-1].m}</case>
+									<case value="1">{$llist[$vo['lid']-1].m1}</case>
+									<case value="2">{$llist[$vo['lid']-1].m2}</case>
+									<case value="3">{$llist[$vo['lid']-1].m3}</case>
+									<default />{$llist[$vo['lid']-1].m}
+								</switch>
+		                    </span>
+		                    <eq name="vo.pid" value="0">
+		                        <span class="dj">点击使用</span>
+		                    </eq>
+		                    <eq name="vo.pid" value="1">
+		                        <span class="dj">已使用</span>
+		                    </eq>
+		                </div>
+		            </div>
+		        </div>
+	        </a>
+	    </li>
+	</volist>
+
+	<volist name="tdata" id="tvo">
+		<li class="wow bounceInRight animated">
+					<a class="sure_4_btn" ids="{$tvo.lid}">
+						<img ids ="{$tvo.pid}" 
+						<switch name="tvo.lid">
+						    <case value="1">
+								<if condition="$tvo['pid'] eq 0">
+		                            src='__PUBLIC__/Home/images/4.png'
+		                        <else />
+		                            src='__PUBLIC__/Home/images/4s.png'
+		                        </if>
+						    </case>
+						    <case value="2">
+								<if condition="$tvo['pid'] eq 0">
+		                             src='__PUBLIC__/Home/images/5.png'
+		                        <else />
+		                            src='__PUBLIC__/Home/images/5s.png'
+		                        </if>
+						    </case>
+						    <default />
+						</switch>
+					>
+
+                        <div class="yh">
+                            <div class="yh-l"> </div>
+                            <div class="yh-r">
+                                <div class="yh-r-main">
+                                    <span class="gm">当前购买价</span>
+									<span class="dq">
+										<switch name="tvo.lstatus">
+											<case value="0">{$tlist[$tvo['lid']-1].m}</case>
+											<case value="1">{$tlist[$tvo['lid']-1].m1}</case>
+											<case value="2">{$tlist[$tvo['lid']-1].m2}</case>
+											<case value="3">{$tlist[$tvo['lid']-1].m3}</case>
+											<default />{$tlist[$tvo['lid']-1].m}
+										</switch>
+				                    </span>
+                                    <eq name="tvo.pid" value="0">
+										<span class="dj">点击使用</span>
+                                    </eq>
+                                    <eq name="tvo.pid" value="1">
+		                        		<span class="dj">已使用</span>
+                                    </eq>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+    </volist>
+
+
+    </ul>
+
+    </div>
+   </div>
+</body>
+</html>
